@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<!-- //background-image: url(../images/header_image.jfif); -->
+<!-- The following lines are comments
+	 Author:				Quentin Quaile S00199608
+	 Date created:			20/02/2020
+	 Page description:		
+	 Modified:				-->
+	 
+	 <html lang="en"> 
+	 <head>
+			<meta charset="utf-8" /> 
+			<meta name="description" content="Funeral service">
+			<meta name="keywords" content="Funeral, loved one, lost">
+			<meta name="author" content="Quentin Quaile">
+			<title>The Final Journey</title>
+			<link rel="stylesheet" type="text/css" href="styles/style.css">
+         
+         <!-- Got this from w3schools -->
+            <script>
+                                var slideIndex = 1;
+                showSlides(slideIndex);
+
+                // Next/previous controls
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+
+                // Thumbnail image controls
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "none";
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                      dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";
+                  dots[slideIndex-1].className += " active";
+                }
+            </script>
+         
+     </head>
+			<body> 
+			
+				<header>				
+                    <img style= "float: left; height: 50px; width: 50 px;" src="Images/logo.png" alt="Logo">
+                    <h1><center>The Final Journey</center></h1>
+				</header>
+                
+                <nav>
+                    <ul>
+                        <li id="active"><a href= "index.html">Home</a></li>
+                        <li><a href="bundle.html">Bundle</a></li>
+                        <li><a href="#">Coffins</a></li>
+                        <li><a href="#">Tombstones</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+                
+                <main> 
+                    <section id= "content">
+                                <!-- this was found on w3schools
+                                                <!-- Slideshow container -->
+                            <div class="slideshow-container">
+
+                              <!-- Full-width images with number and caption text -->
+                              <div class="mySlides fade">
+                                <div class="numbertext">1 / 3</div>
+                                <img src="Images/snow.jpg" alt="Flowers" style="width:100%">
+                              </div>
+
+                              <div class="mySlides fade">
+                                <div class="numbertext">2 / 3</div>
+                                <img src="Images/coffin.png" alt="Coffin" style="width:100%">
+                                <div class="text">Coffin example</div>
+                              </div>
+
+                                <div class="mySlides fade">
+                                <div class="numbertext">3 / 3</div>
+                                <img src="Images/headstone.png" alt="headstone" style="width:100%">
+                                <div class="text">Headstone example</div>
+                              </div>
+
+                              <!-- Next and previous buttons -->
+                              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                            </div>
+                            <br>
+
+                            <!-- The dots/circles -->
+                            <div style="text-align:center">
+                              <span class="dot" onclick="currentSlide(1)"></span>
+                              <span class="dot" onclick="currentSlide(2)"></span>
+                                <span class="dot" onclick="currentSlide(3)"></span>
+                            </div>
+                        <section>
+                            <p>
+                                Our company will do it's best to give you the best possible price range.
+                                There are alot ofadd-ons available. Our basic bundle includes a coffin, hearse, grave plot,
+                                grave-diggers and a death notice.
+                            </p>
+                                <h3>
+                                    The add-on includes:
+                                </h3>
+                            <ol>
+                                <li>Limousine</li>
+                                <li>Church singer</li>
+                                <li>Flowers</li>
+                                <li>Funeral pamphlet /includes picture od deceased</li>
+                                <li>Suit hire</li>
+                                <li>Cremation</li>
+                                <li>Headstone and surround</li>
+                            </ol>
+                                <p>
+                                    All of the above can be included in the customer wants. There will be a discount if two or more are included.
+                                </p>
+                            <h2>Contact us today and we will give you a quote (details in the contact us section)</h2>
+                        </section>
+                    </section>
+				</main>
+                
+                <aside>
+                
+                </aside>
+                
+				
+                
+				<footer> 
+                    
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="bundle.html">Bundle</a></li>
+                        <li><a href="#">Coffins</a></li>
+                        <li><a href="#">Tombstones</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+				</footer>
+			</body>
+			</html>
+			
