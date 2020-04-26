@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<!-- //background-image: url(../images/header_image.jfif); -->
+<!-- The following lines are comments
+	 Author:				Quentin Quaile S00199608
+	 Date created:			20/02/2020
+	 Page description:		
+	 Modified:				-->
+	 
+	 <html lang="en"> 
+	 <head>
+			<meta charset="utf-8" /> 
+			<meta name="description" content="Funeral service">
+			<meta name="keywords" content="Funeral, loved one, lost">
+			<meta name="author" content="Quentin Quaile">
+			<title>The Final Journey</title>
+			<link rel="stylesheet" type="text/css" href="styles/style.css">
+            <link rel="apple-touch-icon" sizes="180x180" href="Images/apple-touch-icon.png">
+            <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
+            <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon-16x16.png">
+            <link rel="manifest" href="/site.webmanifest">
+     </head>
+			<body> 
+			
+				<header>				
+                    <img style= "float: left; height: 50px; width: 50 px;" src="Images/logo.png" alt="Logo">
+                    <h1>The Final Journey</h1>
+				</header>
+                
+                <nav>
+                    <ul>
+                        <li id="active"><a href= "index.html">Home</a></li>
+                        <li><a href="bundle.html">Bundle</a></li>
+                        <li><a href="brochure.html">Brochure</a></li>   
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+                
+                <main> 
+                    <section>
+                        <h3>Please enter the following information: </h3>
+                            <form action="http://year1.ccpdev.me/FormTest.php" method="post">
+
+                                <lable for="first_name">First name:<span class="required">*</span></lable>
+                                <input type="text" name="first_name" id="first_name" autofocus required><br>
+                                <lable for="last_name">Last name:<span class ="required">*</span></lable>
+                                <input type="text" name="last_name" id="last_name" required><br>
+
+
+                                <lable for="email">Email:<span class="required">*</span></lable>
+                                <input type="email" name="email" id="email" required placeholder="johndoe@example.com"><br>
+
+
+                                <lable for="gender">Gender:</lable>
+                                <input type="radio" id="gender" name="gender" value="male"> Male
+                                <input type="radio" id="gender" name="gender" value="female"> Female
+                                <input type="radio" id="gender" name="gender" value="other" checked> Other <br>
+                                <lable for="internet">What type of headstone : </lable>
+
+
+                                <fieldset>
+                                <input type="checkbox" id="internet" name="internet" value="internet" checked> Irish <br>
+                                <input type="checkbox" class="marginal" id="hear" name="paper" value="paper"> Upright Headstone <br>
+                                <input type="checkbox" class="marginal" id="hear" name="paper" value="friend"> White Marble <br>
+                                <input type="checkbox" class="marginal" id="hear" name="paper" value="other"> Other <br>
+                                </fieldset>
+
+
+                                <br>
+
+
+                                <lable for="message">If selected other, please explain what headstone : </lable>
+                                <br>
+                                <textarea cols="40" rows="6" id="message" name="message" placeholder="Your message must be less than 200 characters" data-maxlength="200"></textarea><br>
+
+
+                                <input type="submit" name="submit" id="button" value="Submit">
+                                <input type="reset" name="reset" id="reset">
+
+
+
+                            </form>
+                                <p style="margin-left: 138px"> <span class="required">* <em>indicates a required field </em></span></p>
+                    </section>
+				</main>
+                
+                <aside>
+                
+                </aside>
+                
+				
+                
+				<footer> 
+                    
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="bundle.html">Bundle</a></li>
+                        <li><a href="brochure.html">Brochure</a></li>   
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                    <p>Copyright &copy; 2020</p>
+				</footer>
+			</body>
+			</html>
+			
